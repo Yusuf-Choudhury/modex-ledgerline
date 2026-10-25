@@ -1,0 +1,26 @@
+# One command self-host: docker compose up
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ledgerline
+      POSTGRES_PASSWORD: ${LEDGERLINE_DB_PASSWORD:-change-me}
+      POSTGRES_DB: ledgerline
+    volumes:
+      - ledgerline-data:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/001_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ledgerline"]
+      interval: 5s
+      retries: 10
+  app:
+    build: .
+    ports: ["3000:3000"]
+    environment:
+      LEDGERLINE_DATABASE_URL: postgres://ledgerline:${LEDGERLINE_DB_PASSWORD:-change-me}@db:5432/ledgerline
+      LEDGERLINE_API_TOKENS: ${LEDGERLINE_API_TOKENS:-}
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  ledgerline-data:
