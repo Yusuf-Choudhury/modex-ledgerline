@@ -1,0 +1,46 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ledgerline | Open source issues, boards and docs</title>
+<meta name="description" content="Ledgerline is an AGPL open source alternative to Jira and Confluence. Issues, boards, sprints and a wiki in one app you can self host with one command.">
+<style>
+:root{--ink:#0B0B0F;--card:#15151C;--line:#26262F;--text:#F4F2EC;--mute:#A6A3AE;--acc:#C8A15A;--acc2:#7C8CFF}
+*{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--text);font:16px/1.6 Inter,system-ui,sans-serif}
+a{color:inherit}.w{max-width:1100px;margin:0 auto;padding:0 22px}section{padding:84px 0;border-top:1px solid var(--line);scroll-margin-top:70px}
+nav{position:sticky;top:0;background:rgba(11,11,15,.85);backdrop-filter:blur(10px);z-index:9;border-bottom:1px solid var(--line)}
+nav .w{display:flex;gap:22px;align-items:center;height:62px}nav b{font-size:18px;margin-right:auto}nav a{text-decoration:none;color:var(--mute);font-size:14px}
+.k{font:600 12px/1 ui-monospace,monospace;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)}
+h1{font:700 clamp(40px,7vw,82px)/1.02 Georgia,serif;margin:16px 0;letter-spacing:-.02em}h1 em{color:var(--acc)}
+h2{font:700 clamp(30px,4vw,46px)/1.1 Georgia,serif;margin:10px 0 18px}p.l{color:var(--mute);font-size:19px;max-width:680px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;margin:6px 8px 0 0}.p{background:var(--text);color:var(--ink)}.g{border:1px solid var(--line)}
+pre{background:#000;border:1px solid var(--line);border-radius:14px;padding:18px;overflow:auto;color:#d6f5c6;font-size:15px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.c{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.c h3{margin:6px 0 8px;font-size:20px}.c p{color:var(--mute);margin:0}.pol{transform:rotate(-1.5deg);background:#F4F2EC;color:#111;border-radius:6px;padding:14px 14px 24px}.pol:nth-child(2){transform:rotate(1.8deg)}.pol .s{background:#e4e0d5;height:130px;border-radius:3px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;font:600 13px ui-monospace,monospace}
+table{width:100%;border-collapse:collapse}td,th{padding:12px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--mute);font-weight:500}
+.tag{font:600 11px ui-monospace,monospace;letter-spacing:.15em;color:var(--acc2);border:1px solid var(--acc2);border-radius:99px;padding:3px 8px}.price{font:700 34px Georgia,serif;margin:8px 0}
+details{border-bottom:1px solid var(--line);padding:16px 0}summary{cursor:pointer;font-weight:600}footer{padding:40px 0;color:var(--mute);font-size:14px}
+</style></head><body>
+<nav><div class="w"><b>Ledgerline</b><a href="#how">Quickstart</a><a href="#compare">Compare</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a class="btn p" style="margin:0;padding:8px 16px" href="https://github.com/Yusuf-Choudhury/modex-ledgerline">★ Star on GitHub</a></div></nav>
+<header id="hero" class="w" style="padding:96px 22px 80px"><p class="k">Open source · AGPL 3.0</p>
+<h1>Issues, boards and docs. <em>Yours,</em> not rented.</h1>
+<p class="l">Ledgerline is an open source alternative to Jira and Confluence. Plan sprints, move cards and write the wiki in one fast app you can run on your own server tonight.</p>
+<a class="btn p" href="https://github.com/Yusuf-Choudhury/modex-ledgerline">★ Star on GitHub</a><a class="btn g" href="#how">One command quickstart</a></header>
+<section id="meet"><div class="w"><p class="k">Meet Ledgerline</p><h2>One app for the work and the words about the work.</h2><p class="l">Issues with keys like LL&#8209;7, a drag and drop board, a backlog, sprints, search and a linked wiki. A typed REST API and an MCP server so AI agents can file and update tickets for you.</p></div></section>
+<section id="problem"><div class="w"><p class="k">The problem</p><h2>Two tools, two bills, one headache.</h2><div class="grid"><div class="c"><h3>Tickets here, docs there</h3><p>Decisions live in one product and the tasks that follow live in another.</p></div><div class="c"><h3>Per seat creep</h3><p>Every new hire adds another line to two invoices.</p></div><div class="c"><h3>Your data, their servers</h3><p>Leaving means exports, scripts and lost history.</p></div></div></div></section>
+<section id="polaroids"><div class="w"><p class="k">In the app</p><h2>What you get on day one.</h2><div class="grid"><div class="pol"><div class="s">/work/board</div>Kanban board</div><div class="pol"><div class="s">/work/backlog</div>Backlog and sprints</div><div class="pol"><div class="s">/work/wiki</div>Linked wiki pages</div></div></div></section>
+<section id="capabilities"><div class="w"><p class="k">Capabilities</p><h2>Built for small teams that ship.</h2><div class="grid"><div class="c"><h3>Issues and boards</h3><p>Types, priorities, labels, assignees, parent issues and statuses.</p></div><div class="c"><h3>Sprints and backlog</h3><p>Plan the next fortnight without leaving the page.</p></div><div class="c"><h3>Wiki</h3><p>Nested pages that sit beside the tickets they explain.</p></div><div class="c"><h3>Import</h3><p>Bring issues in from Jira and pages in from Confluence exports.</p></div><div class="c"><h3>REST API</h3><p>Projects, issues, sprints and pages over /api/v1 with token auth.</p></div><div class="c"><h3>MCP server</h3><p>Let AI agents read and update your work, with tokens you control.</p></div></div></div></section>
+<section id="outcomes"><div class="w"><p class="k">Outcomes</p><h2>What changes for your team.</h2><div class="grid"><div class="c"><h3>One source of truth</h3><p>The spec and the ticket are a click apart.</p></div><div class="c"><h3>No lock in</h3><p>It is your Postgres database. Take it anywhere.</p></div><div class="c"><h3>Agents that help</h3><p>Hand routine ticket admin to an AI through MCP.</p></div></div></div></section>
+<section id="how"><div class="w"><p class="k">How it works</p><h2>Running in one command.</h2>
+<pre>git clone https://github.com/Yusuf-Choudhury/modex-ledgerline &amp;&amp; cd modex-ledgerline &amp;&amp; LEDGERLINE_DB_PASSWORD=choose-a-password docker compose up</pre>
+<p class="l">Then open localhost:3000. Prefer to try it without Docker? Run <code>npm install &amp;&amp; npm run dev</code> for an in memory demo with sample data.</p></div></section>
+<section id="compare"><div class="w"><p class="k">Compare</p><h2>Ledgerline next to the usual pair.</h2><table><tr><th></th><th>Ledgerline</th><th>Jira plus Confluence</th></tr><tr><td>Issues, boards, sprints</td><td>Yes</td><td>Yes</td></tr><tr><td>Wiki in the same app</td><td>Yes</td><td>Separate product</td></tr><tr><td>Self host the full source</td><td>Yes, AGPL</td><td>No</td></tr><tr><td>MCP server for AI agents</td><td>Built in</td><td>Check vendor</td></tr></table></div></section>
+<section id="pricing"><div class="w"><p class="k">Pricing</p><h2>Self host at no cost. Pay only for what we run.</h2><p class="l"><span class="tag">PROPOSED</span> Paid plans are not on sale yet. Join the waitlist or book a call.</p>
+<div class="grid"><div class="c"><h3>Self host</h3><div class="price">£0</div><p>The full AGPL app on your own server, forever.</p><a class="btn g" href="https://github.com/Yusuf-Choudhury/modex-ledgerline">★ Star and clone</a></div>
+<div class="c"><span class="tag">PROPOSED</span><h3>Cloud hosted</h3><div class="price">£49<small style="font-size:15px">/month</small></div><p>We run it, back it up and keep it updated. AI not included.</p><a class="btn p" href="mailto:yusuf_choudhury@outlook.com?subject=Ledgerline%20Cloud%20waitlist">Join the waitlist</a></div>
+<div class="c"><span class="tag">PROPOSED</span><h3>Team with Private AI</h3><div class="price">£12<small style="font-size:15px">/user/month</small></div><p>Private AI on your work, 3 seat minimum. Agent API from 2p per action.</p><a class="btn p" href="mailto:yusuf_choudhury@outlook.com?subject=Ledgerline%20Team%20waitlist">Join the waitlist</a></div>
+<div class="c"><span class="tag">PROPOSED</span><h3>Enterprise</h3><div class="price">From £1,350</div><p>Setup, migration, SSO planning and support.</p><a class="btn p" href="https://yusuf-choudhury.com/#book">Book a call</a></div></div></div></section>
+<section id="faq"><div class="w"><p class="k">FAQ</p><h2>Questions.</h2>
+<details><summary>Is it really open source?</summary><p>Yes. The code is AGPL 3.0. Run it, change it and share it under the licence.</p></details>
+<details><summary>Is it ready for production?</summary><p>It is early. The core works and is tested. Accounts and single sign on are still to come, so keep it behind your own network or login for now.</p></details>
+<details><summary>Can I import from Jira or Confluence?</summary><p>Ledgerline has import endpoints for Jira issue and Confluence page exports.</p></details>
+<details><summary>When can I buy a paid plan?</summary><p>Paid plans are proposed and not on sale yet. Join the waitlist to hear first.</p></details></div></section>
+<footer class="w">Ledgerline by Yusuf Choudhury · <a href="https://github.com/Yusuf-Choudhury/modex-ledgerline">GitHub</a> · AGPL 3.0</footer>
+</body></html>
